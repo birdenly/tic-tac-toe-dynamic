@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+h1{
+  font-size: 50px;
+}
+body {
+  height: 100vh;
+  background-image: radial-gradient(rgb(188, 51, 33), rgb(10, 7, 6));
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.container {
+  text-align: center;
+}
+
+.options {
+  text-align: center;
+  margin-top: 30px;
+}
+/* colocar um elemento abaixo do outro */
+.options label,
+.options input,
+.options button {
+  display: block;
+  margin: 10px auto;
+}
+
+#board {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  margin: 20px auto;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 11px;
+  font-size: 20px;
+  background-color: #cca4a47c;
+  color: #000000;
+  max-width: 100px;
+  text-align: center;
+  box-shadow: 5px 5px 5px #110f0f;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #cca4a47c;
+  border: none;
+  box-shadow: 5px 5px 5px #110f0f;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+label {
+  font-size: 20px;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid #000000;
+  background-color: #cca4a47c;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #b1a7a7;
+}
+
+.markedX{
+  color: yellow;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.markedO{
+  color: rgb(24, 52, 176);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#status {
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  padding: 5px;
+}
